@@ -21,6 +21,8 @@ namespace StudentRC_management_system.Controllers
         {
             ClsEmployeeDbcontext context = new ClsEmployeeDbcontext();
 
+           
+
             ClsEmployee obj = new ClsEmployee();
             obj.code = objemployee.code;
             obj.Name = objemployee.Name;
