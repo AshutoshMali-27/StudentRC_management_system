@@ -12,6 +12,9 @@ namespace StudentRC_management_system.Controllers
         // GET: Employee
         public ActionResult Index()
         {
+            ClsEmployeeDbcontext context = new ClsEmployeeDbcontext();
+            List<SelectListItem> items = context.GetItemsFromDatabase();
+            ViewBag.Items = items;
             return View();
         }
 

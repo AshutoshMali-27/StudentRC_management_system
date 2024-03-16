@@ -137,33 +137,6 @@
     </Compile>
     <Compile Include="Models\ClsEmployee.cs" />
     <Compile Include="Models\ClsEmployeeDbcontext.cs" />
-    <Compile Include="Models\ClsStudentDBmodel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ClsStudentDBmodel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ClsStudentDBmodel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ClsStudentDBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ClsStudentDBmodel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ClsStudentDBmodel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TblExam.cs">
-      <DependentUpon>ClsStudentDBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TblStudent.cs">
-      <DependentUpon>ClsStudentDBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblStudentDetail.cs">
-      <DependentUpon>ClsStudentDBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblSubject.cs">
-      <DependentUpon>ClsStudentDBmodel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\StudentMasterViewModel.cs" />
   </ItemGroup>
@@ -172,16 +145,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\ClsStudentDBmodel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ClsStudentDBmodel.edmx</DependentUpon>
-      <LastGenOutput>ClsStudentDBmodel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\ClsStudentDBmodel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ClsStudentDBmodel.edmx</DependentUpon>
-      <LastGenOutput>ClsStudentDBmodel.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
@@ -208,13 +171,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <EntityDeploy Include="Models\ClsStudentDBmodel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ClsStudentDBmodel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ClsStudentDBmodel.edmx.diagram">
-      <DependentUpon>ClsStudentDBmodel.edmx</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />

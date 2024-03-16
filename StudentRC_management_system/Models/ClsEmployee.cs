@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace StudentRC_management_system.Models
 {
@@ -14,5 +15,8 @@ namespace StudentRC_management_system.Models
         public string Department { get; set; }
         public string Email { get; set; }
         public  decimal Salary { get; set; }
+
+
+        public IEnumerable<SelectListItem> ListOfStudents { get; set; }
     }
 }

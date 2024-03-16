@@ -10,23 +10,17 @@ namespace StudentRC_management_system.Controllers
 {
     public class StudentController : Controller
     {
-        StudentsDBEntities objstudentsDBEntities;
+       // StudentsDBEntities objstudentsDBEntities;
         public StudentController()
         {
-            objstudentsDBEntities = new StudentsDBEntities();
+          //  objstudentsDBEntities = new StudentsDBEntities();
         }
 
         // GET: Student
         public ActionResult Index()
         {
-            StudentMasterViewModel objmasterViewModel = new StudentMasterViewModel();
-            objmasterViewModel.ListOfExams = (from obj in objstudentsDBEntities.TblExams
-                                              select new SelectListItem()
-                                              {
-                                                  Text = obj.ExamName,
-                                                  Value = obj.ExamId.ToString()
-                                              }).ToList();
-         //   objmasterViewModel.ListOfSubject=(from obj in obj)
+           
+            
             return View();
         }
     }

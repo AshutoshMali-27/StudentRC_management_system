@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
-
+using System.Web.Mvc;
 
 namespace StudentRC_management_system.Models
 {
@@ -35,6 +35,29 @@ namespace StudentRC_management_system.Models
             {
                 return false;
             }
+        }
+
+
+        public List<SelectListItem> GetItemsFromDatabase()
+        {
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            SqlConnection con = new SqlConnection(cs);
+            string query = "SELECT Id, Name FROM tblemployee";
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    items.Add(new SelectListItem
+                    {
+                        Value = rdr["id"].ToString(),
+                        Text = rdr["Name"].ToString()
+                    });
+                }
+            
+
+            return items;
         }
 
     }
